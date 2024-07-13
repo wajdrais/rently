@@ -1,0 +1,171 @@
+.mainprofil-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding-bottom: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.profile-container {
+  background-color: white;
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-details {
+  text-align: center;
+  color: #f35027;
+}
+
+.user-details h2 {
+  margin: 10px 0;
+  color: #f35027;
+  font-size: 50px;
+}
+
+.user-details p {
+  margin: 5px 0;
+  color: #f35027;
+  font-size: 15px;
+}
+
+.user-products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#productlist .card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(243, 80, 39, 0.5);
+  text-align: center;
+}
+
+#productlist .card-img-top {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 10px auto 0;
+}
+
+#productlist .card-body {
+  padding: 10px;
+}
+
+#productlist .card-title {
+  margin: 10px 0;
+}
+
+#productlist .card-text {
+  display: flex;
+  justify-content: center;
+}
+
+#productlist .btn-primary {
+  margin-top: 10px;
+  background-color: green;
+  border-color: green;
+}
+
+#productlist .btn-primary:active {
+  background-color: #f35027;
+  border-color: #f35027;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start to position the modal lower */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+  padding: 20px; /* Add padding to ensure content is not cut off */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 100%; /* Ensure the modal doesn't exceed the viewport width */
+  position: relative;
+  border: 2px solid #f35027;
+  margin: 100px auto; /* Center the modal with some margin from the top */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #f35027; /* Updated color */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #f35027;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #f35027;
+  width: 100%;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+input[type="file"] {
+  padding: 5px;
+  border: none;
+}
+
+.btn-submit {
+  margin-top: 20px;
+  background-color: #f35027;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-submit:hover {
+  background-color: #e04027;
+}

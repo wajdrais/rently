@@ -1,0 +1,58 @@
+/* Cprofil.css */
+
+.cprofil-container {
+  max-width: 600px;
+  margin: 100px auto; /* Adds space at the top and bottom of the container */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.cprofil-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f35027;
+  font-family: "Barlow", sans-serif;
+}
+
+.cprofil-form div {
+  margin-bottom: 20px; /* Adds space at the bottom of each form element */
+}
+
+.cprofil-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.cprofil-form input,
+.cprofil-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.cprofil-form .dob-input {
+   /* Example of a custom border color */
+  padding: 10px;
+  background-color: #e8f5e9; /* Light green background */
+  font-size: 16px; /* Larger font size */
+}
+
+.cprofil-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f35027;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px; /* Adds space at the top of the button */
+}
+
+.cprofil-form button:hover {
+  background-color: #f35027;
+}

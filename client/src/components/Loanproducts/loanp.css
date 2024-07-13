@@ -1,0 +1,154 @@
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+body {
+  background: #3aaae8;
+  color: #fff;
+  font: 12px/18px "Barlow", sans-serif;
+}
+a,
+a:visited {
+  color: #fff;
+}
+
+#seachbar {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+}
+
+.searchform {
+  background: #f4f4f4;
+  background: rgba(244, 244, 244, 0.79);
+  border: 1px solid #d3d3d3;
+  padding: 2px 5px;
+  margin-right: 20px; /* Add gap between the form and the filter button */
+  width: 500px; /* Increased width to accommodate the longer input */
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.searchform input,
+.searchform button,
+.filter-button {
+  height: 42px; /* Set the height to match the input field */
+  line-height: 42px; /* Align the text vertically */
+}
+
+.searchform input,
+.searchform button {
+  float: left;
+}
+
+.searchform input {
+  background: #fefefe;
+  border: none;
+  font: 12px/12px "Barlow", sans-serif;
+  margin-right: 5px;
+  padding: 10px;
+  width: 390px; /* Increased width to make the input longer */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset,
+    1px 1px 1px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset,
+    1px 1px 1px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset,
+    1px 1px 1px rgba(255, 255, 255, 0.75);
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+.searchform input:focus {
+  outline: none;
+  box-shadow: 0 0 4px #f35027 inset;
+  -moz-box-shadow: 0 0 4px #f35027 inset;
+  -webkit-box-shadow: 0 0 4px #f35027 inset;
+}
+.searchform input::-webkit-input-placeholder {
+  font-weight: bold;
+  line-height: 15px;
+}
+
+.searchform input:-moz-placeholder {
+  font-style: italic;
+  line-height: 15px;
+}
+
+.searchform button,
+.filter-button {
+  background: rgb(243, 80, 39); /* Fallback for older browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(243, 80, 39, 1) 0%,
+    rgba(220, 56, 29, 1) 100%
+  ); /* Firefox */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(243, 80, 39, 1)),
+    color-stop(100%, rgba(220, 56, 29, 1))
+  ); /* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(243, 80, 39, 1) 0%,
+    rgba(220, 56, 29, 1) 100%
+  ); /* Chrome10+, Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(243, 80, 39, 1) 0%,
+    rgba(220, 56, 29, 1) 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(243, 80, 39, 1) 0%,
+    rgba(220, 56, 29, 1) 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(243, 80, 39, 1) 0%,
+    rgba(220, 56, 29, 1) 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#f35027",
+    endColorstr="#dc381d",
+    GradientType=0
+  ); /* IE6-9 */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font: 13px/13px "Barlow", sans-serif;
+  padding: 10px;
+  width: 100px; /* Keep button width the same */
+  box-shadow: 0 0 2px #dc381d inset;
+  -moz-box-shadow: 0 0 2px #dc381d inset;
+  -webkit-box-shadow: 0 0 2px #dc381d inset;
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+
+.searchform button:hover,
+.filter-button:hover {
+  opacity: 0.9;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  height: 100vh; /* Adjust as needed */
+}
+
+.unique {
+  margin: 0;
+  padding: 0;
+}
